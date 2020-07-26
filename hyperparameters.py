@@ -1,0 +1,10 @@
+img_shape = (1, 28, 28)  # shape of input data in [channels, width, height]
+latent_dim = 100  # dimensionality of the latent space
+lambda_gp = 10  # clipping of gradient decent (max slope I think)
+batch_size = 32
+lr = 0.0002  # initial learning rate of Adam
+beta1 = 0.5  # affects how much lr changes with every batch size
+beta2 = 0.999  # affects how much beta1 changes with every batch size (not sure about this or above explanation)
+n_epochs = 200  # how many times the discrim is trained
+n_critic = 5  # after this many discrim improvements, the gen will improve
+sample_interval = 400  # how often a sample image is saved
